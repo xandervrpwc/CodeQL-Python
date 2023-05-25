@@ -4,8 +4,7 @@
 
 import python
 
-from File f, Comment c
+from File f, CommentBlock c
 where
-  f.getExtension() = "py" 
-  and c.getText() != "#"
-select f.getBaseName() as filename, c.getText() as code
+  f.getExtension() = "py" and c.getContents() != ""
+select f.getBaseName(), c.getContents()
