@@ -38,7 +38,7 @@ jobs:
 
           # Read the queries from queries.txt and execute them
           while IFS=, read -r query output; do
-            codeql query run "$query" --database=my-database --output="$output.bqrs"
+            codeql query run "$query" --database=my-database --output="$output.bqrs" --local-checking
             codeql bqrs decode --format=json --output="$output.json" "$output.bqrs"
           done < ./codeql/queries.txt
       - name: Set up Python
