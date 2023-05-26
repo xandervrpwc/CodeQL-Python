@@ -17,7 +17,7 @@ jobs:
 
       - name: Clone repository
         run: |
-          git clone https://github.com/owner/repo.git repository
+          git clone https://github.com/xandervrpwc/codeql-python.git repository
           cd repository
           git checkout ${{ github.sha }}
 
