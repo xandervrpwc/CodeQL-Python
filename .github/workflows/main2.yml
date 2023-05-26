@@ -34,7 +34,7 @@ jobs:
       - name: Run batch queries
         run: |
           # Generate the CodeQL database
-          codeql database create my-database --language=python --source-root=./repository --working-path=./repository
+          codeql database create my-database --language=python --source-root=./repository
 
           # Read the queries from queries.txt and execute them
           while IFS=, read -r query output; do
