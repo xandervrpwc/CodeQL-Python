@@ -1,4 +1,4 @@
-name: CodeQL Analysis Python
+name: CodeQL Analysis Python 2
 
 on:
   push:
