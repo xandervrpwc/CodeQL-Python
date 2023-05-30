@@ -1,3 +1,0 @@
-./codeql/python/functionnames.ql,functionname
-./codeql/python/imports.ql,import
-./codeql/python/comments.ql,comment
